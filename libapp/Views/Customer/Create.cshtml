@@ -1,0 +1,8 @@
+﻿
+@model Customer
+
+<form asp-controller="Customer" asp-action="Create" method="post">
+    <input asp-for="Name" />
+    <input type="submit" value="Create" />
+    <input type="submit" value="Return" asp-controller="Customer" asp-action="List" />
+</form>

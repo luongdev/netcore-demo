@@ -1,0 +1,8 @@
+﻿@model IEnumerable<Author>
+<a asp-controller="Author" asp-action="Create">Create</a>
+
+@foreach(var author in Model)
+{
+    @Html.Partial("AuthorPartial", author)
+
+}

@@ -1,0 +1,21 @@
+﻿<!doctype html>
+<html>
+<head>
+    <h1>Header here</h1>
+</head>
+<body>
+    <div>Nav bar here:</div>
+    <div>
+        <a asp-controller="Customer" asp-action="Index">Customers</a>
+        <a asp-controller="Author" asp-action="Index">Authors</a>
+    </div>
+    <hr/>
+    <div>body here</div>
+    <div>
+        @RenderBody()
+    </div>
+    <hr/>
+    <div>footer here</div>
+
+</body>
+</html>

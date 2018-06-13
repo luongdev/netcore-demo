@@ -1,0 +1,12 @@
+﻿@using libapp.Data.Model
+@model Customer
+
+
+<form asp-controller="Customer" asp-action="Update" method="post">
+    <h3>Edit customer: @Model.Name</h3>
+    @Html.HiddenFor(model => model.CustomerId)
+    <input asp-for="@Model.Name" />
+    <span asp-validation-for="Name"></span>
+    <input type="submit" value="Return" asp-controller="Customer" asp-action="List" />
+    <input type="submit" value="Update" />
+</form>

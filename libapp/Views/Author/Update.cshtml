@@ -1,0 +1,10 @@
+﻿@model Author
+
+<form method="post" asp-controller="Author" asp-action="Update">
+    Edit Author: @Model.Name
+    @Html.HiddenFor(model => model.AuthorId)
+    <input asp-for="Name" />
+    <span asp-validation-for="Name"></span>
+    <input type="submit" value="Return" asp-controller="Authorr" asp-action="Index"/>
+    <input type="submit" value="Update" />
+</form>

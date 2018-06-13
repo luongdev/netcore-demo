@@ -1,0 +1,8 @@
+﻿@model Author
+
+<form asp-controller="Author" asp-action="Create" method="post">
+    <input asp-for="Name" />
+    <span asp-validation-for="Name"></span>
+    <input type="submit" value="Return" asp-controller="Author" asp-action="Index" />
+    <input type="submit" value="Create" />
+</form>
